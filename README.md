@@ -1,6 +1,6 @@
 # Pokemon Team Builder
 
-Pokemon Team Builder is a web application where the user is look up and add them to build their team.
+Pokemon Team Builder is a web application where the user is able to look up Pokemon and add them to build their team.
 
 # Description
 
