@@ -35,4 +35,5 @@ myForm.addEventListener('submit', function(e){
     <button id="addMe">
     Add to the team</button>`
     })
+    .catch(error => list.innerText = `${inputGrab} does not exist. Please try another Pokemon!`)
 })
