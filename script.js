@@ -39,6 +39,10 @@ myForm.addEventListener('submit', function(e){
     const teamMember = document.querySelector('#teamMember')
 
         btnAdd.addEventListener('click', function(){
+
+            const allMembers = document.querySelectorAll('.member')
+      if(allMembers.length <= 5){
+
             const createMember = document.createElement('p')
       createMember.classList.add('member')
       createMember.innerHTML =
@@ -51,9 +55,11 @@ myForm.addEventListener('submit', function(e){
     <button id="remove">Remove</button>
     <br>`
     teamMember.appendChild(createMember)
-        })
-
-
+        } else {
+            alert('Maximum number of Pokemon in the team is 6.')
+        }
     })
+    })
+
     .catch(error => list.innerText = `${inputGrab} does not exist. Please try another Pokemon!`)
 })
