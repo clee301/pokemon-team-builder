@@ -35,6 +35,8 @@ myForm.addEventListener('submit', function(e){
     <button id="addMe">
     Add to the team</button>`
 
+    list.style.display = "block";
+
         // add to the team button 
 
     const btnAdd = document.querySelector('#addMe')
@@ -53,11 +55,10 @@ myForm.addEventListener('submit', function(e){
     No. ${data.id}
     <br>
     Name: ${data.name}
-    <br>
+    <br><br>
     <button id="remove">Remove</button>
     <br>`
     teamMember.appendChild(createMember)
-
 
         // remove button
 
@@ -69,8 +70,6 @@ myForm.addEventListener('submit', function(e){
         allMembersList[y].remove()
         })
        })
-
-
         } else {
             alert('Maximum number of Pokemon in the team is 6.')
         }
