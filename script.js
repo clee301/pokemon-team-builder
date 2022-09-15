@@ -35,6 +35,8 @@ myForm.addEventListener('submit', function(e){
     <button id="addMe">
     Add to the team</button>`
 
+        // add to the team button 
+
     const btnAdd = document.querySelector('#addMe')
     const teamMember = document.querySelector('#teamMember')
 
@@ -55,6 +57,20 @@ myForm.addEventListener('submit', function(e){
     <button id="remove">Remove</button>
     <br>`
     teamMember.appendChild(createMember)
+
+
+        // remove button
+
+        const btnRemove = document.querySelectorAll('#remove')
+      const allMembersList = document.querySelectorAll('.member')
+      btnRemove.forEach(function(x, y){
+     
+      x.addEventListener('click', function(z){
+        allMembersList[y].remove()
+        })
+       })
+
+
         } else {
             alert('Maximum number of Pokemon in the team is 6.')
         }
