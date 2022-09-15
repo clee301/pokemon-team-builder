@@ -39,7 +39,7 @@ myForm.addEventListener('submit', function(e){
     const teamMember = document.querySelector('#teamMember')
 
         btnAdd.addEventListener('click', function(){
-            const createMember = document.createElement('li')
+            const createMember = document.createElement('p')
       createMember.classList.add('member')
       createMember.innerHTML =
       `<img src="${data.sprites.front_default}">
