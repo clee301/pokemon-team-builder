@@ -4,3 +4,10 @@
     width: 150px;
     padding: 15px;
  }
+
+ .member{
+    border: 1px solid;
+    padding: 10px;
+    width: 100px;
+    margin: 20px;
+  }
