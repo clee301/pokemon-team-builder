@@ -38,6 +38,22 @@ myForm.addEventListener('submit', function(e){
     const btnAdd = document.querySelector('#addMe')
     const teamMember = document.querySelector('#teamMember')
 
+        btnAdd.addEventListener('click', function(){
+            const createMember = document.createElement('li')
+      createMember.classList.add('member')
+      createMember.innerHTML =
+      `<img src="${data.sprites.front_default}">
+    <br>
+    No. ${data.id}
+    <br>
+    Name: ${data.name}
+    <br>
+    <button id="remove">Remove</button>
+    <br>`
+    teamMember.appendChild(createMember)
+        })
+
+
     })
     .catch(error => list.innerText = `${inputGrab} does not exist. Please try another Pokemon!`)
 })
