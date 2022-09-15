@@ -1,3 +1,7 @@
+
+document.addEventListener("DOMContentLoaded", function(){  
+
+
 const myForm = document.querySelector('#findPokemon')
 const inputVal = document.querySelector('#enterPokemon')
 const list = document.querySelector('#stats')
@@ -77,4 +81,6 @@ myForm.addEventListener('submit', function(e){
     })
 
     .catch(error => list.innerText = `${inputGrab} does not exist. Please try another Pokemon!`)
+})
+
 })
