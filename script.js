@@ -34,6 +34,10 @@ myForm.addEventListener('submit', function(e){
     <center>
     <button id="addMe">
     Add to the team</button>`
+
+    const btnAdd = document.querySelector('#addMe')
+    const teamMember = document.querySelector('#teamMember')
+
     })
     .catch(error => list.innerText = `${inputGrab} does not exist. Please try another Pokemon!`)
 })
