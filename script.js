@@ -2,6 +2,18 @@
 document.addEventListener("DOMContentLoaded", function(){  
 
 
+function welcome(){
+     document.getElementById('welcome').innerText = "Welcome!"
+    }    
+
+function welcomeTitle(){
+    document.getElementById('welcomeTitle').innerText = "Enter the name of the Pokemon you would like to add to your team!"
+}
+
+
+setTimeout(welcome, 2000)
+setTimeout(welcomeTitle, 4000)
+
 const myForm = document.querySelector('#findPokemon')
 const inputVal = document.querySelector('#enterPokemon')
 const list = document.querySelector('#stats')
