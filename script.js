@@ -19,9 +19,17 @@ const inputVal = document.querySelector('#enterPokemon')
 const list = document.querySelector('#stats')
 
 myForm.addEventListener('submit', function(e){
+    
     e.preventDefault()
+
+
     let inputGrab = inputVal.value
-    fetch(`https://pokeapi.co/api/v2/pokemon/${inputGrab}`)
+    const split = inputGrab.split("")
+    const split2 = split.map((y) => y.toLowerCase())
+    const split3 = split2.join("")
+
+
+    fetch(`https://pokeapi.co/api/v2/pokemon/${split3}`)
     .then(res => res.json())
     .then(data => {
         list.innerHTML =
