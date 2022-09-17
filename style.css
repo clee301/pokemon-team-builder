@@ -1,7 +1,7 @@
 #stats{
     display: none;
     border: 1px solid;
-    width: 150px;
+    width: 170px;
     padding: 15px;
     background-color: #92d0fc;
  }
@@ -24,6 +24,7 @@ h2{
     font-size: 40px;
     padding: 40px;
     width: 60%;
+    border: 1px solid;
 }
 
 button{
