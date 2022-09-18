@@ -13,6 +13,7 @@ User will need a web browser installed to view and use the team builder and Visu
 # Install
 
 $ git clone https://github.com/clee301/pokemon-team-builder
+
 $ cd pokemon-team-builder
 
 

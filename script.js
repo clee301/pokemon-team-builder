@@ -24,12 +24,16 @@ myForm.addEventListener('submit', function(e){
 
 
     let inputGrab = inputVal.value
-    const split = inputGrab.split("")
+
+    // to remove any space and to lowercase and to replace period with dash
+
+    const split = inputGrab.split(" ")
     const split2 = split.map((y) => y.toLowerCase())
     const split3 = split2.join("")
+    const split4 = split3.replace(".", "-")
 
 
-    fetch(`https://pokeapi.co/api/v2/pokemon/${split3}`)
+    fetch(`https://pokeapi.co/api/v2/pokemon/${split4}`)
     .then(res => res.json())
     .then(data => {
         list.innerHTML =
