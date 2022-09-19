@@ -50,3 +50,31 @@ p{
     font-family: arial;
     
 }
+.modal-team{
+    display: none;
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    padding-top: 100px;
+    background-color: rgba(0,0,0,0.2);
+    left: 0;
+    top: 0;
+    overflow: auto;
+  }
+
+.modal-team-content{
+    background-color: white;
+    margin: auto;
+    padding: 25px;
+    border: 1px solid black;
+    width: 80%;
+  }
+
+.close{
+    float: right;
+    }
+.close:hover{
+    cursor: pointer;
+    color: lightgray;
+  }
