@@ -110,6 +110,7 @@ myForm.addEventListener('submit', function(e){
     <button id="remove">Remove</button>
     <br>`
     teamMember.appendChild(createMember)
+    alert('Pokemon has been added to the team!')    
 
         // remove button
 
