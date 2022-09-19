@@ -28,6 +28,16 @@ btnTeam.addEventListener('click', function(){
 	modalTeam.style.display = "block"
 })
 
+btnClose.addEventListener('click', function(){
+	modalTeam.style.display = "none"
+})
+
+window.onclick = function(x){
+	if(x.target == modalTeam){
+  	modalTeam.style.display = "none"
+  }
+}
+
 
 // main fetch function
 
