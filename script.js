@@ -18,6 +18,19 @@ const myForm = document.querySelector('#findPokemon')
 const inputVal = document.querySelector('#enterPokemon')
 const list = document.querySelector('#stats')
 
+// modal window elements and functions
+
+const btnTeam = document.getElementById("openTeam")
+const modalTeam = document.querySelector('.modal-team')
+const btnClose = document.querySelector('.close')
+
+btnTeam.addEventListener('click', function(){
+	modalTeam.style.display = "block"
+})
+
+
+// main fetch function
+
 myForm.addEventListener('submit', function(e){
     
     e.preventDefault()
