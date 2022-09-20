@@ -24,7 +24,5 @@ Enter 'mewtwo' returns 'mewtwo'
 Enter 'MeWtWo' returns 'mewtwo'
 
 Enter 'mr. mime' returns 'mr-mime'
-
-Enter 'mime jr. returns 'mime-jr'
 ```
 
